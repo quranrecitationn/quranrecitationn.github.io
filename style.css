@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Ubuntu&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Oswald', sans-serif;
+  
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    color: whitesmoke;
+    
+}
+.navu{
+    
+    position: sticky;
+    top: 0;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 50px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+.insta{
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    right: 60px;
+
+}
+.snap{
+    position: absolute;
+    width: 32px;
+    top: 19px;
+    right: 10px;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 33px;
+}
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color: black;
+    columns: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons{
+    margin-top: 15px;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    
+} 
+.fas{
+   color: white ;
+   cursor: pointer;
+}
+.songItem{
+    height:50px ;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.songItem img{
+    border-radius: 10px;
+    width: 25px;
+    margin:0 23px ;
+
+}
+
+.songItem i{
+    color: black;
+    padding: 0 15px;
+}
+.head{
+    font-family: ubuntu;
+}
+
+  @media screen and (max-width:500px){ 
+       .name{
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 3px;
+    padding: 0 2px;
+ }
+ .tym{
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.ico{
+    font-size: 22px;
+}
+.insta{
+    width: 40px;
+}
+.snap{
+    top: 17px;
+    width: 27px;
+}
+.head{
+    font-size: 28x;
+    padding-left: 22px;
+}}
+     /* .insta{
+         width: 30px;
+     }
+     .snap{
+         width: 22px;
+     } */ 
+    /* .container{
+        flex-wrap: wrap;
+
+    }
+    .songlist h1{
+        flex-wrap: wrap;
+        font-size:20px ;
+
+
+    }
+    .tym, .ico{
+        flex-wrap: wrap;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+     .name{
+        flex-wrap: wrap;
+        font-size: 15px;
+        margin: 0 3px;
+        padding: 0 2px;
+     }*/
+
+.songItemContainer{
+    margin: 50px 0;
+    
+}
+.songInfo{
+    position: relative;
+    /* left: px; */
+    padding: 5px;
+    color: wheat;
+}
+.name,.tym{
+    font-family: ubuntu ;
+    font-weight: bold;
+}
