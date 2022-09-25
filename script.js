@@ -7,6 +7,9 @@ let myProgressBar = document.getElementById('myProgressBar')
 let masterSongPlay =document.getElementById('masterSongPlay')
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 var navigation = document.getElementById('sideID');
+var menu= document.getElementById('menuicon');
+var close= document.getElementById('closeicon');
+
 // let songItemPlay = document.getElementsByClassName('songItemplay') //MyEdit
 
 let songs = [
@@ -136,3 +139,6 @@ function closeFunction(){
     document.getElementById("closeicon").style.display ="none";
 
 }
+menu.addEventListener("click",openFunction);
+close.addEventListener("click",closeFunction);
+
