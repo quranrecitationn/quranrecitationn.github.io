@@ -6,6 +6,7 @@ let masterPlay = document.getElementById('masterPlay')
 let myProgressBar = document.getElementById('myProgressBar')
 let masterSongPlay =document.getElementById('masterSongPlay')
 let songItems = Array.from(document.getElementsByClassName('songItem'));
+var navigation = document.getElementById('sideID');
 // let songItemPlay = document.getElementsByClassName('songItemplay') //MyEdit
 
 let songs = [
@@ -25,29 +26,6 @@ songItems.forEach((element, i)=>{
     
     element.getElementsByClassName("name")[0].innerText = songs[i].songName;
 })
-
-// audioElement.play()
-
-// Handle play/pause click 
-
-// my
-// songItemPlay.addEventListener('click',()=>{
-//     if(audioElement.paused || audioElement.currentTime<=0){
-//         audioElement.play();
-//         songItemPlay.classList.remove('fa-play-circle')
-//         songItemPlay.classList.add('fa-pause-circle')
-       
-//     }
-//     else{audioElement.pause();
-//         songItemPlay.classList.remove('fa-pause-circle')
-//         songItemPlay.classList.add('fa-play-circle')
-        
-//     }
-// })
-
-
-//end
-
 
 
 
@@ -141,3 +119,20 @@ document.getElementById('previous').addEventListener('click',()=>{
        
     
 })
+
+//side navigation
+
+navigation.style.right ="-250px";
+
+function openFunction(){
+    document.getElementById("sideID").style.right="0";
+    document.getElementById("menuicon").style.display ="none";
+    document.getElementById("closeicon").style.display ="inline";
+    
+}
+function closeFunction(){
+    document.getElementById("sideID").style.right="-250px";
+    document.getElementById("menuicon").style.display ="inline";
+    document.getElementById("closeicon").style.display ="none";
+
+}
